@@ -35,28 +35,3 @@ pipeline:
             spec: {}
             type: Cloud
         type: CI
-    - stage:
-        name: kk
-        identifier: kk
-        description: ""
-        type: Custom
-        spec:
-          execution:
-            steps:
-              - step:
-                  type: ShellScript
-                  name: ShellScript_runningapp
-                  identifier: ShellScript_runningapp
-                  spec:
-                    shell: Bash
-                    onDelegate: true
-                    source:
-                      type: Inline
-                      spec:
-                        script: |-
-                          npm install
-                          npm start
-                    environmentVariables: []
-                    outputVariables: []
-                  timeout: 10m
-        tags: {}
