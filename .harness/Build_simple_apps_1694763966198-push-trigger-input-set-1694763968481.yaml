@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_simple_apps_1694763966198-push-trigger-input-set
+  identifier: Build_simple_apps_1694763966198pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_simple_apps_1694763966198
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
